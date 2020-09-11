@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:background="#E6FFF1" android:orientation="vertical" android:id="@id/photo_container" android:layout_width="0.0dip" android:layout_height="wrap_content"  android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<ImageView android:layout_width="54.0dip" android:layout_height="54.0dip" android:layout_centerHorizontal="true" android:id="@id/pic_pic" android:layout_marginTop="8.0dip" android:src="@drawable/picpic"/>
+            <TextView android:layout_marginTop="2dp" android:textSize="14.0sp" android:textColor="#3050C6" android:gravity="center" android:id="@id/photo_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/photo" android:layout_below="@id/pic_pic" android:layout_centerHorizontal="true" />
+            <com.restorephoto.photorecovery.undeleted.photo.recovery.c.b.a android:id="@id/photo_check_box" android:clickable="false" android:layout_width="16.0dip" android:layout_height="16.0dip"   android:layout_toEndOf="@id/photo_text_view" app:checkedDrawable="@drawable/ic_vector_filter" app:uncheckedDrawable="@drawable/ic_vector_filter_unselected" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#3050C6" android:gravity="center" android:id="@id/photo_count_text_view" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="0" />
+    </LinearLayout>
+    
+    <LinearLayout android:gravity="center_horizontal" android:background="#FFF4EA" android:orientation="vertical" android:id="@id/video_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<ImageView android:layout_width="54.0dip" android:layout_height="54.0dip" android:layout_centerHorizontal="true" android:id="@id/vi_vi" android:layout_marginTop="8.0dip" android:src="@drawable/vivi"/>
+            <TextView android:layout_marginTop="2dp" android:textSize="14.0sp" android:textColor="#3050C6" android:gravity="center" android:id="@id/video_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/video" android:layout_centerHorizontal="true" android:layout_below="@id/vi_vi" />
+            <com.restorephoto.photorecovery.undeleted.photo.recovery.c.b.a android:id="@id/video_check_box" android:clickable="false" android:layout_width="16.0dip" android:layout_height="16.0dip"  android:layout_toEndOf="@id/video_text_view" app:checkedDrawable="@drawable/ic_vector_filter" app:uncheckedDrawable="@drawable/ic_vector_filter_unselected" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#3050C6" android:gravity="center" android:id="@id/video_count_text_view" android:layout_width="wrap_content" android:layout_height="fill_parent"  android:text="0" />
+    </LinearLayout>
+   
+    <LinearLayout android:gravity="center_horizontal" android:background="#EAF3FF" android:orientation="vertical" android:id="@id/audio_container" android:layout_width="0.0dip" android:layout_height="wrap_content"  android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+		
+		<ImageView android:layout_width="54.0dip" android:layout_height="54.0dip" android:layout_centerHorizontal="true" android:id="@id/mu_mu" android:layout_marginTop="8.0dip" android:src="@drawable/mumu"/>
+		
+            <TextView android:layout_marginTop="2dp" android:textSize="14.0sp" android:textColor="#3050C6" android:gravity="center" android:id="@id/audio_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/audio" android:layout_centerHorizontal="true" android:layout_below="@id/mu_mu"/>
+            <com.restorephoto.photorecovery.undeleted.photo.recovery.c.b.a android:id="@id/audio_check_box" android:clickable="false" android:layout_width="16.0dip" android:layout_height="16.0dip"  android:layout_toEndOf="@id/audio_text_view" app:checkedDrawable="@drawable/ic_vector_filter" app:uncheckedDrawable="@drawable/ic_vector_filter_unselected" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#3050C6" android:gravity="center" android:id="@id/audio_count_text_view" android:layout_width="wrap_content" android:layout_height="fill_parent"  android:text="0" />
+    </LinearLayout>
+</LinearLayout>
